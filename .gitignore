@@ -1,0 +1,33 @@
+# Editor-related files
+.idea/
+.vscode/
+
+# Node.js dependencies
+node_modules/
+
+# Build and temporary files
+build/
+dist/    # If you use "dist" instead of "build"
+tmp/
+temp/
+
+# Environment and lock files
+package-lock.json
+pnpm-lock.yaml  # If using pnpm
+yarn.lock       # If using Yarn
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript-generated files
+*.d.ts
+
+#logger file ignore
+src/app.log
