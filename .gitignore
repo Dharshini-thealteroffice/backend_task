@@ -12,7 +12,6 @@ tmp/
 temp/
 
 # Environment and lock files
-package-lock.json
 pnpm-lock.yaml  # If using pnpm
 yarn.lock       # If using Yarn
 .env
