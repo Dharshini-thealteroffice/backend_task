@@ -1,8 +1,6 @@
 import express, { Application } from "express";
-import dotenv from "dotenv";
 import todoRoutes from "../src/routes/todoRoutes";
-
-dotenv.config();
+import { errorHandler } from "./middlewares/errorHandler";
 
 export const createApp = (): Application => {
   const app = express();
@@ -11,5 +9,7 @@ export const createApp = (): Application => {
 
   app.use("/todos", todoRoutes);
 
-   return app;
+  app.use(errorHandler);
+
+  return app;
 };
